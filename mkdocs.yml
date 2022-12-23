@@ -1,0 +1,132 @@
+# Info
+site_name: DS & Algo
+site_description: Notes of DS & Algo using JS.
+site_author: Raúl Peñate
+site_url: https://github.com/raulpenate
+
+# Github data
+repo_url: https://github.com/raulpenate
+repo_name: raulpenate/DS & Algo
+
+# Customization
+theme:
+  logo: https://cdn-icons-png.flaticon.com/512/2103/2103658.png
+  favicon: https://cdn-icons-png.flaticon.com/512/2103/2103658.png
+  name: material
+  page: meta
+  palette:
+    # Palette toggle for dark mode
+    - scheme: slate
+      primary: orange
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+      # Palette toggle for light mode
+    - scheme: default
+      primary: orange
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+  # Font
+  font:
+    text: Roboto
+
+  # Logo
+  icon:
+    repo: fontawesome/brands/github-alt
+
+  # Features
+  features:
+    - navigation.instant
+    - navigation.tabs
+    - navigation.sections
+    - toc.integrate
+    - search.suggest
+    - search.share
+
+# Plugins
+plugins:
+  - search
+  - glightbox:
+       touchNavigation: true
+       loop: false
+       effect: zoom
+       slide_effect: slide
+       width: 100%
+       height: auto
+       zoomable: true
+       draggable: true
+       skip_classes:
+         - custom-skip-class-name
+       auto_caption: false
+       caption_position: bottom
+
+# JS
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+markdown_extensions:
+  - meta
+  # Python Markdown
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+
+  # Python Markdown Extensions
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: vegalite
+          class: vegalite
+          format: !!python/name:mkdocs_charts_plugin.fences.fence_vegalite
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+# Footer
+extra:
+  social:
+    - icon: material/github
+      link: https://github.com/raulpenate
+    - icon: material/linkedin
+      link: https://www.linkedin.com/in/ra%C3%BAl-pe%C3%B1ate-60604a231/
+
+copyright: Copyright &copy; 2022 - 2023 Raúl Peñate
+
+nav:
+  - Home: index.md
+  - DS & Algo:
+      - What are Data Structures & Algorithms?: DSA/introduction.md
+      - 1 - Big O:
+          - What is Big O?: DSA/01/bigo.md
+          - Time & Space Complexity: DSA/01/timeandspacecomplexity.md
+          - Armotized Time: DSA/01/amortizedtime.md
+          - Types of Big O'S: DSA/01/typesofbigo.md
+          - How to read Big O: DSA/01/howtoreadbigo.md
+      - 2 - Problem Solving Patterns: 
+          - What are Data Patterns?: DSA/02/whataredatapatterns.md
+          - Frequency Counter: DSA/02/frequencycounter.md
