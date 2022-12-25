@@ -28,15 +28,9 @@ python3 -m venv venv
 ```
 Activate the virtual environment:
 ```python
-source venv/bin
+source venv/bin/activate
 ```
 
 ``` python
-pip install mkdocs-material
-```
-
-The theme will reside in the folder mkdocs-material/material. After cloning from git, you must install all required dependencies with:
-
-```python
-pip install -e mkdocs-material
+pip install mkdocs-material mkdocs-glightbox
 ```
