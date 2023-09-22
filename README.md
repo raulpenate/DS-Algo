@@ -34,3 +34,10 @@ source venv/bin/activate
 ``` python
 pip install mkdocs-material mkdocs-glightbox
 ```
+
+Start the project:
+```python
+mkdocs serve
+```
+
+**NOTE:** If you are running the project again, don't forget to start the virtual environment.
