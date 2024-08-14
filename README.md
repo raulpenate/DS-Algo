@@ -32,7 +32,7 @@ source venv/bin/activate
 ```
 
 ``` python
-pip install mkdocs-material mkdocs-glightbox
+pip install -r requirements.txt
 ```
 
 Start the project:
