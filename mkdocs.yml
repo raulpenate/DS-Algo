@@ -10,6 +10,8 @@ repo_name: raulpenate/DS & Algo
 
 # Customization
 theme:
+  custom_dir: docs/overrides
+  language: en
   logo: https://cdn-icons-png.flaticon.com/512/2103/2103658.png
   favicon: https://cdn-icons-png.flaticon.com/512/2103/2103658.png
   name: material
@@ -17,14 +19,14 @@ theme:
   palette:
     # Palette toggle for dark mode
     - scheme: slate
-      primary: orange
+      primary: teal
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
 
       # Palette toggle for light mode
-    - scheme: default
-      primary: orange
+    - scheme: default 
+      primary: teal
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
@@ -66,6 +68,7 @@ plugins:
 
 # JS
 extra_javascript:
+  - javascripts/scripts.js
   - javascripts/mathjax.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
@@ -85,6 +88,9 @@ markdown_extensions:
   - md_in_html
   - toc:
       permalink: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+         case: lower
 
   # Python Markdown Extensions
   - pymdownx.arithmatex:
@@ -94,8 +100,8 @@ markdown_extensions:
   - pymdownx.caret
   - pymdownx.details
   - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.highlight:
       linenums: true
   - pymdownx.inlinehilite
@@ -110,15 +116,22 @@ markdown_extensions:
   - pymdownx.tilde
   - pymdownx.snippets
 
-# Footer
 extra:
+  alternate:
+    - name: 🇺🇸 EN
+      link: /en/ 
+      lang: en
+    - name: 🇸🇻 ES
+      link: /es/
+      lang: es
+  # Footer
   social:
     - icon: material/github
       link: https://github.com/raulpenate
     - icon: material/linkedin
       link: https://www.linkedin.com/in/ra%C3%BAl-pe%C3%B1ate-60604a231/
 
-copyright: Copyright &copy; 2022 - 2023 Raúl Peñate
+copyright: Copyright &copy; 2022 - 2024 Raúl Peñate
 
 nav:
   - Home: index.md
@@ -129,7 +142,7 @@ nav:
           - Time & Space Complexity: DSA/01/timeandspacecomplexity.md
           - Armotized Time: DSA/01/amortizedtime.md
           - Types of Big O'S: DSA/01/typesofbigo.md
-          - How to read Big O: DSA/01/howtoreadbigo.md
+          - How to read Big O: DSA/01/howtoreadbigo.mds
       - 2 - Problem Solving Patterns:
           - What are Data Patterns?: DSA/02/whataredatapatterns.md
           - Frequency Counter: DSA/02/frequencycounter.md

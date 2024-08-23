@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* overflow-y: hidden; */
+}
+
+body {
+    background-color: #F9F9F9;
+    min-height: 100vh;
+    /* overflow-x: hidden; */
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.parallax{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+ #text {
+    position: absolute;
+    font-size: 5em;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
+    user-select:none;
+ }
+
+ .parallax img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+ }
+ 
+ .scrolling{
+    position: relative;
+    background-color: #003329;
+    pad: 100px;
+ }
+
+ .scrolling h2 {
+    font-size: 3em;
+    
+ }
