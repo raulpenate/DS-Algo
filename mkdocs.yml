@@ -5,7 +5,7 @@ site_author: Raúl Peñate
 site_url: https://github.com/raulpenate
 
 # Github data
-repo_url: https://github.com/raulpenate
+repo_url: https://github.com/raulpenate/DS-Algo
 repo_name: raulpenate/DS & Algo
 
 # Customization
@@ -34,11 +34,11 @@ theme:
 
   # Font
   font:
-    text: Roboto
+    text: false
 
   # Logo
   icon:
-    repo: fontawesome/brands/github-alt
+    repo: fontawesome/brands/github
 
   # Features
   features:
@@ -122,10 +122,14 @@ markdown_extensions:
 extra:
   # Footer
   social:
-    - icon: material/github
+    - icon: fontawesome/brands/github
       link: https://github.com/raulpenate
-    - icon: material/linkedin
-      link: https://www.linkedin.com/in/ra%C3%BAl-pe%C3%B1ate-60604a231/
+    - icon: fontawesome/brands/stack-overflow
+      link: https://stackoverflow.com/users/15445661/ra%C3%BAl-pe%C3%B1ate
+    - icon: fontawesome/brands/dev
+      link: https://dev.to/raulpenate
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/raulpenate
 
 # Gives footer
 hooks:

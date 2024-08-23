@@ -7,15 +7,15 @@
     font-family: CaskaydiaCoveNerdFontMono;
     src: url('../fonts/JetBrainsMonoNerdFont-Regular.ttf');
 }
-
+body,
 code,
 .linenodiv,
-.linenos{
-    font-family: 'CaskaydiaCoveNerdFontMono', sans-serif;
+.linenos
+{
     font-size: max(1em, 16px) !important;
 }
 
-body{
-    font-family: 'JetBrainsMonoNerdFont-Regular',  sans-serif;
-    font-size: max(1em, 15px) !important;
+:root {
+    --md-text-font: 'JetBrainsMonoNerdFont-Regular',  sans-serif;
+    --md-code-font:  'CaskaydiaCoveNerdFontMono', sans-serif;
 }
