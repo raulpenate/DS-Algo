@@ -1,0 +1,9 @@
+@font-face {
+    font-family: CaskaydiaCoveNerdFontMono;
+    src: url('../fonts/CaskaydiaCoveNerdFontMono-Regular.ttf');
+}
+
+*{
+    font-family: 'CaskaydiaCoveNerdFontMono',  sans-serif;
+    font-size: max(1em, 15px);
+}

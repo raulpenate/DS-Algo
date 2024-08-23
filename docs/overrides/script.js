@@ -16,7 +16,6 @@
   
   let text = getElementById("text");
   let leaf = getElementById("leaf");
-  let plant = getElementById("plant");
   let tree = getElementById("tree");
   let hill1 = getElementById("hill1");
   let hill4 = getElementById("hill4");
@@ -34,18 +33,8 @@
     hill5.style.left = value * 1.5 + "px";
   });
   
-  let switch_theme = getElementByClass("md-header__option")[0];
-  switch_theme.addEventListener("click", () => {
-    console.log(switch_theme);
-    let labels = switch_theme.getElementsByTagName("label");
-    console.log(labels);
-    console.log(labels[0].title);
-    // let theme = labels.find((e) => e.title = 'Switch to light mode')
-    console.log(theme);
-    console.log("yeah");
-  });
   
-  navigation.addEventListener("navigate", e => {
+  navigation.addEventListener("navigate", (e) => {
     let url = "http://127.0.0.1:8000/raulpenate/";
     if (url != e.destination.url) {
       bar = getElementByClass("md-header")[0];
@@ -57,7 +46,12 @@
       bar.style.color = "#fff";
       secondBar.style.backgroundColor = " #009485";
       secondBar.style.color = "#fff";
+    }else{
+      bar.style.backgroundColor = " #F9F9F9";
+      bar.style.color = "#003329";
+      secondBar.style.backgroundColor = " #F9F9F9";
+      secondBar.style.color = "#003329";
     }
   });
   
-})()
+})();
