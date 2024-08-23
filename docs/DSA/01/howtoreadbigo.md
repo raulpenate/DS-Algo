@@ -1,5 +1,5 @@
 Remember that $n$ indicates the input size, so what we what to do is to count the inputs we have in your code. 
-I'm to use the most basic examples for time complexity but also I'm going to explain space complexity, because you need to understand the basic ones before jumping to the fancy ones like $2^n$, $n\,log\,(n)$ or $n!$.
+I'm going to use the most basic examples for time complexity but also I'm going to explain space complexity, because you need to understand the basic ones before jumping to the fancy ones like $2^n$, $n\,log\,(n)$ or $n!$.
 
 !!! Note "4 rules to read Big O more easily:"
 
