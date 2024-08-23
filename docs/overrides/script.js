@@ -5,6 +5,8 @@
   function getElementByClass(e) {
     return document.getElementsByClassName(e);
   }
+
+  document.title = "DS & ALGO"
   
   let bar = getElementByClass("md-header")[0];
   let secondBar = getElementByClass("md-tabs")[0];
