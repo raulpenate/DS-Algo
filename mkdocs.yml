@@ -70,13 +70,15 @@ plugins:
 # JS
 extra_javascript:
   - js/scripts.js
-  - js/mathjax.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
-  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  - js/katex.js
+  - https://unpkg.com/katex@0/dist/katex.min.js
+  - https://unpkg.com/katex@0/dist/contrib/auto-render.min.js
 
 # CSS
 extra_css:
   - css/style.css
+  - https://unpkg.com/katex@0/dist/katex.min.css
 
 markdown_extensions:
   - meta
@@ -138,7 +140,7 @@ nav:
           - Time & Space Complexity: DSA/01/timeandspacecomplexity.md
           - Armotized Time: DSA/01/amortizedtime.md
           - Types of Big O'S: DSA/01/typesofbigo.md
-          - How to read Big O: DSA/01/howtoreadbigo.mds
+          - How to read Big O: DSA/01/howtoreadbigo.md
       - 2 - Problem Solving Patterns:
           - What are Data Patterns?: DSA/02/whataredatapatterns.md
           - Frequency Counter: DSA/02/frequencycounter.md

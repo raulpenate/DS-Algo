@@ -10,7 +10,7 @@ I'm to use the most basic examples for time complexity but also I'm going to exp
 
 ---
 
-$E.g:$
+$Eg:$
 === "$O(1)$"
     ```js
     function sayHi(){

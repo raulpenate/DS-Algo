@@ -3,7 +3,19 @@
     src: url('../fonts/CaskaydiaCoveNerdFontMono-Regular.ttf');
 }
 
-*{
-    font-family: 'CaskaydiaCoveNerdFontMono',  sans-serif;
-    font-size: max(1em, 15px);
+@font-face {
+    font-family: CaskaydiaCoveNerdFontMono;
+    src: url('../fonts/JetBrainsMonoNerdFont-Regular.ttf');
+}
+
+code,
+.linenodiv,
+.linenos{
+    font-family: 'CaskaydiaCoveNerdFontMono', sans-serif;
+    font-size: max(1em, 16px) !important;
+}
+
+body{
+    font-family: 'JetBrainsMonoNerdFont-Regular',  sans-serif;
+    font-size: max(1em, 15px) !important;
 }

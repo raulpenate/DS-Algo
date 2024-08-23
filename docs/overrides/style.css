@@ -49,16 +49,23 @@ header {
  .scrolling{
     position: relative;
     background-color: #003329;
-    padding: 5vw;
+    padding: 15vw 5vw 15vw 5vw;
  }
 
  .scrolling h2 {
     font-size: 3em;
  }
 
-@media screen and (max-width:1050px){
+@media screen and (max-width:1250px){
     #text {
-        font-size: max(1em, 30px);
+        font-size: max(1em, 55px);
+        padding: 0 5px 0 5px;
+    }
+}
+
+@media screen and (max-width:850px){
+    #text {
+        font-size: max(1em, 25px);
         padding: 0 5px 0 5px;
     }
 }
