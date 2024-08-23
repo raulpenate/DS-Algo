@@ -37,8 +37,11 @@
   
   
   navigation.addEventListener("navigate", (e) => {
-    let url = "http://127.0.0.1:8000/raulpenate/";
-    if (url != e.destination.url) {
+    const local_url = "http://127.0.0.1:8000/raulpenate/";
+    const host_url = "https://raulpenate.github.io/DS-Algo/";
+    const dest_url = e.destination.url;
+
+    if (local_url != dest_url || host_url != dest_url) {
       bar = getElementByClass("md-header")[0];
       secondBar = getElementByClass("md-tabs")[0];
   
