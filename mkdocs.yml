@@ -146,6 +146,7 @@ nav:
           - Armotized Time: DSA/01/amortizedtime.md
           - Types of Big O'S: DSA/01/typesofbigo.md
           - How to read Big O: DSA/01/howtoreadbigo.md
+          - Logarithms: DSA/01/whatsalogarithm.md
       - 2 - Problem Solving Patterns:
           - What are Data Patterns?: DSA/02/whataredatapatterns.md
           - Frequency Counter: DSA/02/frequencycounter.md
