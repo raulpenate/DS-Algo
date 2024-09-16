@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* overflow-y: hidden; */
+}
+
+body {
+  background-color: #f9f9f9;
+  min-height: 100vh;
+  /* overflow-x: hidden; */
+}
+
+p {
+  padding: 1vh;
+}
+
+@media screen and (max-width: 500px){
+  .mkdocs-button{
+    width: 100%;
+    margin: 5px 0 0 0;
+  }
+}
+
+/* Parallax */
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.parallax {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#text {
+  position: absolute;
+  font-size: max(1em, 80px);
+  color: #fff;
+  text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.4);
+  user-select: none;
+  text-align: center;
+  padding-bottom: 160px;
+}
+
+.parallax img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.scrolling {
+  position: relative;
+  background-color: #003329;
+  padding: 15vw 5vw 15vw 5vw;
+}
+
+.scrolling h2 {
+  font-size: 3em;
+}
+
+@media screen and (max-width: 1250px) {
+  #text {
+    font-size: max(1em, 55px);
+    padding: 0 5px 0 5px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  #text {
+    font-size: max(1em, 25px);
+    padding: 0 5px 0 5px;
+  }
+}
+
+/* Mkdocs */
+.md-header {
+  position: initial;
+}
+.md-main__inner {
+  margin: 0;
+}
+.md-content {
+  display: none;
+}
+@media screen and (min-width: 60em) {
+  .md-sidebar--secondary {
+    display: none;
+  }
+}
+@media screen and (min-width: 76.25em) {
+  .md-sidebar--primary {
+    display: none;
+  }
+}

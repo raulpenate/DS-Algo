@@ -1,0 +1,21 @@
+@font-face {
+    font-family: CaskaydiaCoveNerdFontMono;
+    src: url('../fonts/CaskaydiaCoveNerdFontMono-Regular.ttf');
+}
+
+@font-face {
+    font-family: CaskaydiaCoveNerdFontMono;
+    src: url('../fonts/JetBrainsMonoNerdFont-Regular.ttf');
+}
+body,
+code,
+.linenodiv,
+.linenos
+{
+    font-size: max(1em, 16px) !important;
+}
+
+:root {
+    --md-text-font: 'JetBrainsMonoNerdFont-Regular',  sans-serif;
+    --md-code-font:  'CaskaydiaCoveNerdFontMono', sans-serif;
+}

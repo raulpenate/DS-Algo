@@ -1,0 +1,81 @@
+{% extends "main.html" %} {% block tabs %} {{ super() }}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="parallax">
+      <img id="hill1" src="img/hill1.png" alt="hill1" />
+      <img id="hill2" src="img/hill2.png" alt="hill2" />
+      <img id="hill3" src="img/hill3.png" alt="hill3" />
+      <img id="hill4" src="img/hill4.png" alt="hill4" />
+      <img id="hill5" src="img/hill5.png" alt="hill5" />
+      <img id="tree" src="img/tree.png" alt="tree" />
+      <h2 id="text">
+        🌴Welcome to the JUNGLE🌴
+        <br>
+        🦧 of DS & ALGO 🍌🐒
+      </h2>
+      <img id="leaf" src="img/leaf.png" alt="leaf" />
+      <img id="plant" src="img/plant.png" alt="plant" />
+    </section>
+    <section class="scrolling mdx-container">
+      <div class="md-grid md-typeset">
+        <div class="mdx-hero">
+          <div class="mdx-hero__content">
+            <h1>🌴 Welcome to the Jungle of Code! 🦧</h1>
+            <p>
+              Dive into the wild world of Data Structures and Algorithms where
+              learning meets adventure.
+            </p>
+            <p>
+              This repository is your ultimate guide, offering a treasure trove
+              of implementations in both JavaScript and Java.
+            </p>
+            <p>
+              Maintained by
+              <a href="https://github.com/raulpenate">Raul Peñate</a> a SWE that
+              have made projects such compilers and installer scripts for Linux,
+              this project is more than just code—it's a journey through the
+              dense forest of computational thinking, inspired by the master
+              teachings of Colt Steele. Whether you're here to explore or to
+              conquer, there's something for everyone.
+            </p>
+            <p>
+              Explore 🧭, learn 📝, and grow 👑 as you swing through our
+              detailed documentation and examples!
+            </p>
+            <p>
+              🐯 Ready to get started? Grab a vine and let’s swing into the code
+              jungle together! 🌴
+            </p>
+            <a
+              href="{{ page.next_page.url | url }}"
+              class="mkdocs-button md-button md-button--primary"
+            >
+              Quick start! 🦜
+            </a>
+            <a
+              href="https://github.com/raulpenate/futebol"
+              class="mkdocs-button md-button"
+              target="_blank"
+            >
+              Checkout my Compiler 🐍
+            </a>
+            <p>
+              <a href="https://www.flaticon.com/authors/becris" target="_blank"
+                >Graph icons created by Becris - Flaticon</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
+{% endblock %} {% block content %} {% endblock %} {% block footer %}{% endblock
+%}
