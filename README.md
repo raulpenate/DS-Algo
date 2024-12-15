@@ -51,3 +51,4 @@ If you prefer to set it up manually, run these commands:
 3. **Start the project:**
    ```bash
    mkdocs serve
+
