@@ -1,0 +1,154 @@
+# Info
+site_name: DS & Algo
+site_description: Notes of DS & Algo using JS.
+site_author: Raúl Peñate
+site_url: https://github.com/raulpenate
+
+# Github data
+repo_url: https://github.com/raulpenate/DS-Algo
+repo_name: raulpenate/DS & Algo
+
+# Customization
+theme:
+  custom_dir: docs/overrides
+  logo: https://cdn-icons-png.flaticon.com/512/2103/2103658.png
+  favicon: https://cdn-icons-png.flaticon.com/512/2103/2103658.png
+  name: material
+  page: meta
+  palette:
+    # Palette toggle for dark mode
+    - scheme: slate
+      primary: teal
+      accent: yellow 
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+      # Palette toggle for light mode
+    - scheme: default 
+      primary: teal
+      accent: yellow 
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+  # Font disable to use custom ones
+  font:
+    text: false
+
+  # Logo
+  icon:
+    repo: fontawesome/brands/github
+
+  # Features
+  features:
+    - content.code.annotate
+    - navigation.footer
+    - navigation.instant
+    - navigation.sections
+    - navigation.tabs
+    - search.share
+    - search.suggest
+    - toc.integrate
+
+# Plugins
+plugins:
+  - search
+  - glightbox:
+      auto_caption: false
+      caption_position: bottom
+      draggable: true
+      effect: zoom
+      height: auto
+      loop: false
+      slide_effect: slide
+      touchNavigation: true
+      width: 100%
+      zoomable: true
+      skip_classes:
+        - custom-skip-class-name
+
+# JS
+extra_javascript:
+  - js/scripts.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - js/katex.js
+  - https://unpkg.com/katex@0/dist/katex.min.js
+  - https://unpkg.com/katex@0/dist/contrib/auto-render.min.js
+
+# CSS
+extra_css:
+  - css/style.css
+  - https://unpkg.com/katex@0/dist/katex.min.css
+
+# Python Markdown
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - meta
+  - toc:
+      permalink: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+         case: lower
+  # Python Markdown Extensions
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+  - pymdownx.snippets
+
+# Social Footer
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/raulpenate
+    - icon: fontawesome/brands/stack-overflow
+      link: https://stackoverflow.com/users/15445661/ra%C3%BAl-pe%C3%B1ate
+    - icon: fontawesome/brands/dev
+      link: https://dev.to/raulpenate
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/raulpenate
+
+# Gives footer
+hooks:
+  - hooks/copyright-year.py
+
+# Nav Menu
+nav:
+  - Home: index.md
+  - DS & Algo:
+      - What are Data Structures & Algorithms?: DSA/introduction.md
+      - 1 - Big O:
+          - What is Big O?: DSA/01/bigo.md
+          - Time & Space Complexity: DSA/01/timeandspacecomplexity.md
+          - Armotized Time: DSA/01/amortizedtime.md
+          - Types of Big O'S: DSA/01/typesofbigo.md
+          - How to read Big O: DSA/01/howtoreadbigo.md
+          - Logarithms: DSA/01/whatsalogarithm.md
+      - 2 - Problem Solving Patterns:
+          - What are Data Patterns?: DSA/02/whataredatapatterns.md
+          - Frequency Counter: DSA/02/frequencycounter.md
+          - Multiple Pointers: DSA/02/multiplepointers.md
+
