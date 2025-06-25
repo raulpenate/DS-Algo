@@ -9,7 +9,7 @@ Very useful for keeping track of a subset of data in an array/string etc.
 > Write a function called **maxSubarraySum**, which accepts a  array of integers and a number called **num**.
 The function should calculate the maximum sum of **num** consecutive elements in the array.
 ```js
-maxSubarraySum([1,2,5,2,8,1,5],2) // 10
+maxSubarraySum([1,2,5,2,8,1,5],2) //10
 maxSubarraySum([1,2,5,2,8,1,5],4) //17
 maxSubarraySum([4,2,1,6],1) //6
 maxSubarraySum([],4) //null

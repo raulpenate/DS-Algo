@@ -92,7 +92,7 @@ same([1,2,3]) //undefined
 
 ---
 
-## **validAnagram(word1, word2)**
+## **countUniqueValues(arr)**
 
 > Implement a function called **countUniqueValues**, which accepts a sorted array, and counts the unique values in the array. There can be negative numbers in the array, but it will always be sorted. Bonus: You must do this with constant or O(1) space and O(n) time.
 ```js
@@ -111,7 +111,7 @@ countUniqueValues([-2,-1,-1,0,1]) // 4
     === "JS"
 
         ```js
-        function validAnagram(word1, word2){
+        function countUniqueValues(arr){
             if( arr.length === 0 ) return 0
             if( arr.length === 1 ) return 1
 
